@@ -1,111 +1,34 @@
-import logo from './logo.svg';
+import { React, useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useNavigate,
+} from "react-router-dom";
 import './App.css';
+
+import Home from './pages/Home';
 
 function App() {
   return (
+    <Router>
+      <AppContent />
+    </Router>
+  );
+}
+
+function AppContent() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    navigate('/home');
+  }, [navigate]);
+
+  return (
     <div className="App">
-      <div className="div2">
-        {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div1">
-        {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
+      <Routes>
+        <Route path="/home" element={<Home />} />
+      </Routes>
     </div>
   );
 }
