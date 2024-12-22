@@ -8,6 +8,7 @@ import {
 import './App.css';
 
 import Home from './pages/Home';
+import HeaderLayout from './layouts/HeaderLayout'
 
 function App() {
   return (
@@ -15,6 +16,14 @@ function App() {
       <AppContent />
     </Router>
   );
+}
+
+function getHeaderLayout(Component) {
+  return ( 
+    <HeaderLayout>
+      <Component />
+    </HeaderLayout>
+  )
 }
 
 function AppContent() {
@@ -27,7 +36,7 @@ function AppContent() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/home" element={getHeaderLayout(Home)} />
       </Routes>
     </div>
   );
