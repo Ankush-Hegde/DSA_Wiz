@@ -1,5 +1,5 @@
 import React from "react";
-import "../styling/components/Button.css";
+import "../styles/components/Button.css";
 
 const Button = ({ onClick, children, loading = false }) => {
   return (
@@ -8,7 +8,7 @@ const Button = ({ onClick, children, loading = false }) => {
       className={`default-button-component ${loading ? "loading" : ""}`}
     >
       {loading && (
-        <Text>...</Text>
+        <p>...</p>
       )}
       <span className={`button-text ${loading ? 'hidden' : ''}`}>{children}</span>
     </button>
