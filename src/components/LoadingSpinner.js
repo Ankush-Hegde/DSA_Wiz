@@ -1,6 +1,6 @@
 import React from "react";
 
-const LoadingSpinnerGIF = "/assets/gif/BlackLoadingSpinner.gif"
+import LoadingSpinnerGIF from "../lib/assets/gif/BlackLoadingSpinner.gif"
 
 function LoadingSpinner() {
   return (
