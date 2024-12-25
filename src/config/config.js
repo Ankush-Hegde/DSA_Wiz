@@ -1,5 +1,6 @@
-import {BASE_URL} from "../../.env"
+const config = {
+    BASE_URL: process.env.REACT_APP_BASE_URL
+};
 
-BASE_URL = BASE_URL
-
+export default config;
 // context, hooks,
