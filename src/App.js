@@ -1,14 +1,7 @@
-import { React, useEffect } from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useNavigate,
-} from "react-router-dom";
-import './App.css';
+import { React } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 
-import Home from './pages/Home';
-import HeaderLayout from './layouts/HeaderLayout'
+import AppContent from "./AppContent";
 
 function App() {
   return (
@@ -18,28 +11,4 @@ function App() {
   );
 }
 
-function getHeaderLayout(Component) {
-  return ( 
-    <HeaderLayout>
-      <Component />
-    </HeaderLayout>
-  )
-}
-
-function AppContent() {
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    navigate('/home');
-  }, [navigate]);
-
-  return (
-    <div className="App">
-      <Routes>
-        <Route path="/home" element={getHeaderLayout(Home)} />
-      </Routes>
-    </div>
-  );
-}
-
-export default App;
+export default App;  
