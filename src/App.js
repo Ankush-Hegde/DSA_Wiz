@@ -1,113 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import { React } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+
+import AppContent from "./AppContent";
 
 function App() {
   return (
-    <div className="App">
-      <div className="div2">
-        {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div1">
-        {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-      <div className="div2">
-      {Array.from({ length: 20 }, (_, index) => (
-          <button className='grid'></button>
-        ))}
-      </div>
-    </div>
+    <Router>
+      <AppContent />
+    </Router>
   );
 }
 
-export default App;
+export default App;  
