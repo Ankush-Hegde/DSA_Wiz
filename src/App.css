@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+body {
+  background-color: #ffe8e8;
+}
+
 .toast-message-error,
 .toast-message-success {
   position: fixed;

@@ -1,4 +1,4 @@
-.header {
+.header-component {
     background-color: #282c34;
     color: white;
     padding: 10px;
@@ -7,12 +7,12 @@
     align-items: center;
   }
   
-  .header-title {
+  .header-component-title {
     font-size: 1.5rem;
     margin: 0;
   }
   
-  .header-nav ul {
+  .header-component-nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -20,12 +20,12 @@
     gap: 15px;
   }
   
-  .header-nav a {
+  .header-component-nav a {
     color: white;
     text-decoration: none;
     font-size: 1rem;
   }
   
-  .header-nav a:hover {
+  .header-component-nav a:hover {
     text-decoration: underline;
   }

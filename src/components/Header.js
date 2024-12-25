@@ -3,9 +3,9 @@ import "../styles/components/Header.css"; // Import the separate CSS file for st
 
 function Header() {
   return (
-    <header className="header">
-      <h1 className="header-title">My App Header</h1>
-      <nav className="header-nav">
+    <header className="header-component">
+      <h1 className="header-component-title">My App Header</h1>
+      <nav className="header-component-nav">
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
